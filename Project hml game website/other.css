@@ -1,0 +1,210 @@
+/* Basic reset for better consistency across browsers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #285f61;
+    color: gray;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #08d4e6;
+    color: #002fff;
+    padding: 20px 0;
+    text-align: center;
+    animation: fadeInDown 1s ease;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: rgb(48, 99, 105);
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #28a745;
+}
+
+.banner {
+    background: url('images/banner-bg.jpg') no-repeat center center/cover;
+    text-align: center;
+    padding: 50px 20px;
+    color: rgb(32, 217, 217);
+    animation: zoomIn 1.2s ease;
+}
+
+.banner h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    animation: fadeInUp 1.5s ease;
+}
+
+.banner p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    animation: fadeInUp 1.5s ease;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #28a745;
+    color: rgb(47, 254, 16);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.mod-categories {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 20px;
+    background-color: #0db3c2;
+    animation: fadeInUp 1s ease;
+}
+
+.category {
+    background-color: #2cf8ea;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.category h4 {
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.category p {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.mod-list {
+    padding: 30px 20px;
+    background-color: #05ffda;
+}
+
+.mod-item {
+    background-color: #a9db89;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    animation: fadeInUp 1.2s ease forwards;
+    animation-delay: 0.5s;
+}
+
+.mod-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.mod-item img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.mod-item img:hover {
+    transform: scale(1.05);
+}
+
+.download-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #1d1d1d;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    animation: fadeInUp 1s ease;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

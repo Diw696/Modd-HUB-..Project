@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MODDHUBB</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>MODD-HUBB</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Mods</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <h2>Modding: Where Games Become Wild!</h2>
+        <p>Because, why play a game when you can completely break it with mods? Find the craziest mods for your favorite games here!</p>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search-filter">
+        <h2>Find Your Mods, Unleash Chaos!</h2>
+        <p>Type in the game you want to mod and prepare to enter a world where physics no longer matters, zombies drive cars, and everything can explode... probably.</p>
+        <form id="search-form">
+            <input type="text" id="search-game" placeholder="Search for your game or mod..." required>
+            <button type="submit">Search</button>
+        </form>
+    </section>
+
+    <section class="mods-section">
+        <h2>Featured Mods - Ready to Break Your Game</h2>
+        
+        <!-- Featured Game Mods (GTA SA, GTA V, CS:GO) -->
+        <div class="mod" data-category="gta-sa">
+            <a href="gta sa.html"> <!-- Link to the new page -->
+                <img src="Screenshot 2024-10-13 155428.png" alt="GTA: San Andreas Mod">
+                <h3>GTA: San Andreas - Different Mod</h3>
+                <p>Experience San Andreas like never before with Shrek and his friends.</p>
+            </a>
+        </div>
+
+        <div class="mod" data-category="gta-v">
+            <a href="gta 5.html"> <!-- Link to the GTA V page -->
+                <img src="Screenshot 2024-10-13 155923.png" alt="GTA V Mod">
+                <h3>GTA V - Realism Mod</h3>
+                <p>If you thought Los Santos was realistic, wait till you try this mod...</p>
+            </a>
+        </div>
+        
+        <div class="mod" data-category="csgo">
+            <a href="csgo.html"> <!-- Link to the CS:GO page -->
+                <img src="Screenshot 2024-10-13 160050.png" alt="CS:GO Mod">
+                <h3>CS:GO - Custom Skins & Maps Mod</h3>
+                <p>Tired of the same old maps and skins? With this mod...</p>
+            </a>
+        </div>>
+    </section>
+
+    <!-- Upload Mod Section -->
+    <section class="upload-mod">
+        <h2>Got a Crazy Mod Idea? Share it with the World!</h2>
+        <p>Turn your wildest ideas into reality. Does your mod make everything explode? Or turn enemies into penguins? We want it. Upload your masterpiece here:</p>
+        <form id="mod-upload-form">
+            <label for="mod-title">Mod Title:</label>
+            <input type="text" id="mod-title" placeholder="Enter mod title" required><br>
+
+            <label for="mod-description">Mod Description:</label>
+            <textarea id="mod-description" placeholder="Enter mod description" required></textarea><br>
+
+            <label for="mod-image">Upload Image:</label>
+            <input type="file" id="mod-image" accept="image/*"><br>
+
+            <button type="submit">Submit Mod</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Fan-Made Nexus Mods. All rights reserved.</p>
+        <p>Disclaimer: We are not responsible for any PCs that catch fire due to extreme modding. Game responsibly... or not.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
